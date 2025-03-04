@@ -1,0 +1,17 @@
+fastai
+fastbook
+jupyterlab
+jupyter_contrib_nbextensions
+keras
+matplotlib
+numpy
+nose2
+pandas
+pip
+sbmlnetwork
+seaborn
+tellurium
+tensorflow
+tensorflow-metal
+torch
+torchvision
