@@ -1,9 +1,12 @@
 fastai
 fastbook
+gensim
 jupyterlab
 jupyter_contrib_nbextensions
 keras
 matplotlib
+mypy
+nltk
 numpy
 nose2
 pandas
