@@ -1,0 +1,3 @@
+1. Create a file with an appropriate representation of reaction sides
+  a. Separates left and right
+  b. Handles different length of sides

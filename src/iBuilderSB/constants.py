@@ -9,4 +9,5 @@ for _ in range(2):
     if (PROJECT_NAME in PROJECT_DIR) and (not "src" in PROJECT_DIR):
         break
 DATA_DIR = os.path.join(PROJECT_DIR, "data")
-REACTIONS_PATH = os.path.join(DATA_DIR, "rhea_reactions.csv")
+RHEA_REACTIONS_PATH = os.path.join(DATA_DIR, "rhea_reactions.csv")
+COMPOUND_NAMES_PATH = os.path.join(DATA_DIR, "compound_names.csv")
