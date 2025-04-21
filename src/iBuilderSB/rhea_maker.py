@@ -123,3 +123,23 @@ class RheaMaker(object):
         for chebi_id in chebi_ids:
             chebi_dict[chebi_id] = list(self.rhea_df[self.rhea_df[C_CHEBI] == int(chebi_id)][C_REACTION])   # type: ignore
         return chebi_dict
+    
+    def calculateStoichiometryMatrixEntropy(self)->pd.Series:
+        """Calculates the entropy of the stoichiometry matrix structured as:
+        Reactions. Values are entropy.
+          "rt_1_0"
+          "rt_2_0"
+          "rt_0_1"
+          "rt_1_1"
+          "rt_2_1"
+          "rt_0_2"
+          "rt_1_2"
+          "rt_2_2"
+          "rt_other"
+        Species dataframe
+          <species name>,<chebi_id>, <reactant entropy>, <product entropy>  
+
+
+        Returns:
+            pd.Series: _description_
+        """

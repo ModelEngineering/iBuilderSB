@@ -35,9 +35,10 @@ class TestRheaMaker(unittest.TestCase):
         #if IGNORE_TEST:
         #    return
         matrix = self.rhea_maker.stoichiometry_matrix
-        sym_mat = np.matmul(matrix, matrix.T)
-        eigenvalues = np.linalg.eigvals(sym_mat)
         import pdb; pdb.set_trace()
+        self.assertTrue(isinstance(matrix, np.ndarray))
+        self.assertTrue(matrix.shape[1] == len(self.rhea_maker.reactions))
+        self.assertTrue(matrix.shape[0] == len(self.rhea_maker.chebis))
 
         
 
